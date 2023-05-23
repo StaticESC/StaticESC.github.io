@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto';
-    font-size: 22px;
+    font-size: 20px;
     background-color: #ece7d5;
     margin: 0;
     color: #9B8A46;
@@ -53,7 +53,7 @@ a {
 }
 
 .header {
-    font-size: 30px;
+    font-size: 25px;
     padding: 0 0 1em 0;
     max-width: 60%;
     font-weight: bold;
