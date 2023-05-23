@@ -7,6 +7,21 @@ body {
     padding: 0em 15% 0em 15%;
 }
 
+.personal-pic {
+    max-width: 18em;
+    border: 2px solid #9B8A46;
+    margin: 0 1em 0 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0; /* Remove padding on mobile devices with a maximum width of 600px */
+    }
+    .personal-pic {
+        max-width: 80lvw;
+    }
+}
+
 a {
     color:unset;
 }
@@ -45,14 +60,10 @@ a {
     text-align: center;
 }
 
-.personal-pic {
-    max-width: 18em;
-    border: 2px solid #9B8A46;
-    margin: 0 1em 0 0;
-}
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-col {
