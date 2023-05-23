@@ -72,11 +72,12 @@ a {
 }
 
 .img-link {
+    filter: invert(59%) sepia(7%) saturate(2622%) hue-rotate(11deg) brightness(91%) contrast(84%);
     transition: box-shadow 0.3s ease;
 }
 
 .img-link:hover {
-    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.4));
+    filter: invert(59%) sepia(7%) saturate(2622%) hue-rotate(11deg) brightness(91%) contrast(84%) drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
     /* box-decoration: underline; */
 }
 
