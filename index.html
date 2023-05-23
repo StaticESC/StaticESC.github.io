@@ -1,6 +1,7 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <link href='style.css' rel='stylesheet'>
         <script src="main.js" defer></script>
         <title>Jshelly - Home</title>
@@ -9,10 +10,9 @@
         <h2 style="text-align: center; border: 2px solid #9B8A46; margin: 0.5em 0 0.5em 0">This website is currently a WIP. Please check back later for more content.</h2>
         <div class="darker extra-padding">
             <div class="flex header">
-                <a class="flex-item link" href="#link-about-me">About me</a>
-                <a class="flex-item link">Skills</a>
-                <a class="flex-item link">Projects</a>
-                <a class="flex-item link">Contact</a>
+                <a class="flex-item link no-decor" href="#link-about-me">About me</a>
+                <a class="flex-item link no-decor" href="#link-skills">Skills</a>
+                <a class="flex-item link no-decor" href="#link-projects-experiences">Projects/Experiences</a>
             </div>
             <div class="personal-space flex">
                 <img src=res/my-pic.jpeg class="personal-pic flex-item">
@@ -23,21 +23,114 @@
                     <h3 class="flex-item flex"><div class="lighter-text">Email:&nbsp;</div><div id="age">jyotirmay.shelly@gmail.com</div></h3>
                     <h3 class="flex-item flex"><div class="lighter-text">Address:&nbsp;</div><div id="age">Edmonton, AB, Canada</div></h3>
                     <h3 class="flex-item flex"><div class="lighter-text">School:&nbsp;</div><div id="age">University of Alberta</div></h3>
-                    <a href="https://github.com/StaticESC"><img class="logo flex-item img-link" src=res/github-logo.png></a>
-                    <a href="https://www.linkedin.com/in/jshelly1377/"><img class="logo flex-item img-link" src=res/linkedin.png></a>
+                    <div class="flex">
+                        <div><a href="https://github.com/StaticESC"><img class="logo flex-item img-link" src=res/github-logo.png></a></div>
+                        <div><a href="https://www.linkedin.com/in/jshelly1377/"><img class="logo flex-item img-link" src=res/linkedin.png></a></div>
+                        <div class="centered-text" style="margin: auto; margin-left: 1em;"><a href="https://docs.google.com/document/d/1cCqxaDQa7IOuptMFLf0727GuRQ4l5EBp/edit?usp=sharing&ouid=113523655099459732095&rtpof=true&sd=true" class="link">Resume</a></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="extra-padding">
-            <h1 id="link-about-me">About Me</h1>
-            <p class="about-me">Hey! My name is Jyotirmay Shelly!</p>
+            <div class="long-text">
+                <h1 id="link-about-me">About Me</h1>
+                <p>
+                <!-- TODO: Make this more readable -->
+                Hey, my name is Jyotirmay Shelly and welcome to my web-portfolio! I am a third-year CS student at the University of Alberta. I am currently <b>open to work</b>, seeking tech-related internships.<br><br>
+
+                <h3>Interests</h3>
+                My main interest is in Software development, with specific interests in 
+                Low-level network development, Embedded development, Web Development, Mobile Development, and Application Development. I also have prior experience in the aforementioned fields. <br><br>
+
+                Furthermore, I have a great interest in programming language design and implementation. I believe that knowing how a language is designed (and implemented) -- hence knowing whether it is compiled, requires a runtime, is garbage collected, knowing its underlying memory management model, its type system, etc -- can greatly boost the programmer's efficiency and also lead to some rather insightful considerations.
+                After learning Rust (I love to program in Rust) I learned a lot not just about Rust but also about other programming languages. I realized that, as programmers, we often take a lot for granted (like which Data structure to use, whether the language requires a runtime, etc) which can have great implications when designing code for scalability or when working under constrained environments (like embedded systems). Incorporating these considerations also lets one know when to <i>not</i> worry about these things.
+                <br><br>
+
+                I also love open source software. As a Linux and (neo)vim user for the past two years, I have gained great appreciation for open source software. I have also made my own contributions to the open source community. <br><br>
+
+                <h3>Principles/Paradigms</h3>
+                I believe what separates a good programmer from a great programmer is the set of principles they believe in. Kent Beck, the creator of 'Extreme Programming' once said “I’m Not a Great Programmer, I’m Just a Good Programmer With Great Habits.”.  Although I agree to a multitude of different programming paradigms/principles, I like to give particular attention to some, like:
+                <ul>
+                    <li>Functional programming: Writing code which is functionally pure, with minimized side effects, however not at a cost to performance.</li>
+                    <li>Leveraging Strong typed Languages: Choosing, when possible, languages which have a strong type system. However, not-strongly typed languages in many cases make sense. (like rapid development, scripting, etc)</li>
+                    <li>Safe: Writing code which is safe, as in all possible "states" or "routes" of failure are accounted for.</li>
+                    <li>Performance Oriented: When talking about "systems-at-scale", performance is key. It is always beneficial to consider performance when choosing the tech-stack.
+                </ul>
+                Being a person of strong principles is fine, but I think it is often more important to be pragmatic, hence I also believe in:
+                <ul>
+                    <li>Being pragmatic: Sometimes, for the sake of simplicity, lack of scalability, or time, it is fine to not meet all expectations. However, there is always a balance. It would be better to reach deadlines rather than being a perfectionist, however, one should still strive for perfection!</li>
+                </ul>
+                </p>
+
+                <h1 id="link-skills">Skills</h1>
+                <h3>Programming Experience:</h3>
+                <ul>
+                    <li> Java: I have a very good grasp of Java, OOP, and design patterns. I have used Java to create a Multiplayer Android QR Hunting game in a team based environment.</li><br>
+                    <li> C/C++: I have used C/C++ in compiler development. I have also used C/C++ in a systems programming class where I used it for the following: Interprocess communication (using FIFOs, pipes, sockets), multithreading, TCP communication over sockets, process synchronization (using concurrency primitives like semaphores, mutexes, etc). </li><br>
+                    <li> Rust: Rust is my favourite programming language and I am still learning it. I have over 1 year of experience in programming in Rust. I have implemented the Snake game on a microcontroller using Rust (embedded development). I am also currently working on making a multiplayer terminal based client server uno game implementation in Rust.</li><br>
+                    <li> Python: I have over 5 years of experience in python programming. I have experience with PyGame and using it in a OOP manner.  I also have experience in integrating SQLite and MongoDB to create simple terminal based database management interfaces.</li><br>
+                    <li> C#: I have extensively used C# and Unity for 2D game development. I also have a good grasp of OOP in C#. </li><br>
+                    <li> HTML/CSS/JS: I am currently learning full-stack web development and will soon be learning different JavaScript frameworks.</li><br>
+                    <li> Julia: I have some experience in programming in Julia in context of machine learning. I have used Julia to create and evaluate models. </li><br>
+                    <li> RISC-V ASM: I learned Risc-V assembly in my 'computer organization and architecture' class in University.</li><br>
+                </ul>
+
+                <h3>Other Technical Skills:</h3>
+                <ul>
+                    <li>Currently learning full-stack web development</li><br>
+                    <li>Strong knowledge of (and experience with) Software Development Practices like Agile development, Test Driven Development, Scrum, Design Patterns, etc.</li><br>
+                    <li>Solid understanding of Data Structures and algorithms, when to use which data structure, performance considerations, some practice with solving competitive programming problems.</li><br>
+                    <li>Over 4 years of experience in using git. Experience of using git in a team environment.</li><br>
+                    <li>Experience of daily driving and troubleshooting Linux and experience of using GNU/Linux utilities for two years.</li><br>
+                    <li>Strong knowledge of Operating Systems concepts, programming in the POSIX environment. Multithreaded programming, Interprocess communication (IPC) between process using FIFOs, pipes, sockets (TCP). Both theoretical and practical knowledge of concurrency primitives.</li><br>
+                    <li>Experience with Databases: Both SQL (SQLite) and NoSQL (MongoDB, Firebase). Experience with integrating these databases using APIs to other programming languages.</li><br>
+                </ul>
+
+
+                <h1 id="link-projects-experiences">Projects/Experiences:</h3>
+                <ul>
+                    <li> Web Portfolio <i>[personal project]</i>:<br>
+                        05/2023, Edmonton, AB
+                        <ul><li>Started working on this website!</li>
+                            <li>Started learning HTML, CSS, and JavaScript to create this website.</li>
+                        </ul></li><br>
+
+                        <li> Multiplayer Terminal-based client-server Uno game in Rust [Work In Progress] <i>[personal project]</i>:<br>
+                            04/2023, Edmonton, AB
+                            <ul><li>Started working on implementing the Uno card game in Rust such that 2 players on the same network could play this in the comfort of their terminal!</li>
+                                <li>Multi-threading and networking implemented using Tokio, a fast async runtime.</li>
+                                <li>Interprocess communications by using strongly typed packets sent over TCP, (de)serialized efficiently.</li>
+                                <li>Intraprocess (and interthread) communications by using mutexes and message passing among tokio threads.</li>
+                            </ul></li><br>
+
+                            <li> QR Code Hunting Android App <i>[Team project at University]</i>:<br>
+                                03/2023, Edmonton, AB
+                                <ul><li>Developed a Java Android app letting users hunt QR codes and compete against other users.</li>
+                                    <li>Led a team of six: delegated tasks, orchestrated scrums, triaged issues, followed agile guidelines, and communicated with the customer (the TA & professor) to ensure timely software delivery.</li>
+                                    <li>Worked on UI, QR validation, Firebase integration (NoSQL), general software architecture/design, and more.</li>
+                                </ul></li><br>
+
+                                <li>Gazprea compiler as the final project for Compiler Design course <i>[Team project at University]</i>:<br>
+                                    10/2022, Edmonton, AB
+                                    <ul><li>Used ANTLR a parse tree generator, to parse source code and generate parse trees.</li>
+                                        <li>Used C++ to traverse those parse trees and attach functionality to tree nodes</li>
+                                        <li>Used LLVM for platform independent code generation</li>
+                                        <li>Wrote several test cases to validate correctness. Used fuzzer testers for some other assignments. This project was followed strict Test Driven Development.</li>
+                                    </ul></li><br>
+
+                                    <li> Snake Game on a Microcontroller in Rust <i>[personal project]</i>:<br>
+                                        07/2022, Edmonton, AB
+                                        <ul><li>Created the snake game on the Wio-terminal:  a SAMD51-based microcontroller with an inbuilt display.</li>
+                                            <li>Used the Rust compiler (which is inherently a cross-compiler) to target ARM architecture</li>
+                                        </ul></li><br>
+                </ul>
+
+
+            </div>
         </div>
-        <br><br><br><br><br>
-        <br><br><br><br><br>
-        <br><br><br><br><br>
         <div class="darker extra-padding footer flex-col">
             <div class=flex-item>Made with ❤ by Me!</div>
-            <div class="flex-item link"><a href="attributions.html">Click here for Attributions!</a></div>
+            <a href="attributions.html" class="flex-item link">Click here for Attributions!</a>
         </div>
     </body>
 </html>

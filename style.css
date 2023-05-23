@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto';font-size: 22px;
+    font-family: 'Roboto';
+    font-size: 22px;
     background-color: #ece7d5;
     margin: 0;
     color: #9B8A46;
@@ -7,7 +8,6 @@ body {
 }
 
 a {
-    text-decoration: none;
     color:unset;
 }
 
@@ -31,6 +31,10 @@ a {
 .link:hover {
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
+}
+
+.no-decor {
+    text-decoration:none;
 }
 
 .header {
@@ -81,8 +85,12 @@ a {
     /* box-decoration: underline; */
 }
 
-p.about-me {
-    font-size: 20px;
+.long-text {
+    font-family: 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto';
 }
 
 #contact-form {
