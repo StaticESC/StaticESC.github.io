@@ -1,0 +1,28 @@
+---
+---
+/* This file will be loaded before the minima scss files. Hence THIS FILE WILL OVERRIDE MINIMA DEFAULTS */
+/* Override theme defaults */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@100;300&display=swap');
+$base-font-family: 'Roboto', sans-serif;
+
+/* load _sass/minima.scss */
+@import "minima";
+
+/* Put any custom CSS here */
+
+h1, h2, .site-title {
+  font-family: 'Passion One', cursive;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.post-content h1 {
+    font-size: 40px;
+}
+
+.base-font {
+    font-family: 'Roboto', sans-serif;
+}
