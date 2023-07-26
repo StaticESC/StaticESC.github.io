@@ -13,6 +13,12 @@ Hey, my name is Jyotirmay Shelly and welcome to my About me page.
   border: 1px solid black;
   border-radius: 2%;
 }
+
+@media (max-width: 600px) {
+    .personal-pic {
+        float:none;
+    }
+}
 </style>
 
 <img src="/assets/my-photo.jpg" class="personal-pic">
