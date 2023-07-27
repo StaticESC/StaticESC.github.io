@@ -8,7 +8,7 @@ Hey, my name is Jyotirmay Shelly and welcome to my About me page.
 .personal-pic {
   float: left;
   margin: 5px;
-  max-width: 14em;
+  max-width: 12.2em;
   margin: 0 1em 0 0;
   border: 1px solid black;
   border-radius: 2%;
@@ -33,7 +33,6 @@ Hey, my name is Jyotirmay Shelly and welcome to my About me page.
  "current year": "Third",
 }
 ```
-<br><br>
 
 # Interests
 My main interest is in Software development, with specific interests in Low-level network development, Embedded development, Web Development, Mobile Development, and Application Development. I also have prior experience in the aforementioned fields.
